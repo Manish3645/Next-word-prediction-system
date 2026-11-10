@@ -1,0 +1,92 @@
+{
+  "id": "A",
+  "name": "SimpleRNN",
+  "architecture": "rnn",
+  "mask_zero": false,
+  "epochs_completed": 4,
+  "best_epoch": 2,
+  "training_time_seconds": 60.21022950000042,
+  "training_loss_at_best_epoch": 6.574189186096191,
+  "training_accuracy_at_best_epoch": 0.10462000221014023,
+  "validation_loss_at_best_epoch": 6.987259387969971,
+  "validation_accuracy_at_best_epoch": 0.12330000102519989,
+  "training_loss_at_final_epoch": 6.011155128479004,
+  "training_accuracy_at_final_epoch": 0.13816000521183014,
+  "validation_loss_at_final_epoch": 7.052669525146484,
+  "validation_accuracy_at_final_epoch": 0.12860000133514404,
+  "overall_test": {
+    "sample_count": 10000,
+    "oov_target_count": 1434,
+    "oov_target_percentage": 14.34,
+    "test_loss": 6.981623649597168,
+    "top1_accuracy": 0.1133,
+    "top5_accuracy": 0.2472,
+    "probabilities_finite_and_valid": true,
+    "probability_rows_checked": 10000,
+    "maximum_probability_sum_absolute_error": 4.76837158203125e-07,
+    "perplexity": 1076.6650754068087
+  },
+  "in_vocabulary_test": {
+    "sample_count": 8566,
+    "oov_target_count_excluded": 1434,
+    "test_loss": 6.0668110847473145,
+    "top1_accuracy": 0.13226710249824888,
+    "top5_accuracy": 0.28858276908708846,
+    "probabilities_finite_and_valid": true,
+    "probability_rows_checked": 8566,
+    "maximum_probability_sum_absolute_error": 4.76837158203125e-07,
+    "perplexity": 431.30309721675457
+  },
+  "evaluation_time_seconds": 16.82127760000003,
+  "model_size_bytes": 22395652,
+  "model_output_vocabulary_size": 9593,
+  "tokenizer_mapping_sha256": "f2b73d7ae243444d65804fcdc4b3ef7de507a3f81c44a5f674f5d1f209ab3790",
+  "test_arrays_sha256": "2bc8690ee754a4756e6d0f7631388c76324601611e0f1e06816d52fe637254f9",
+  "test_arrays_identical_across_experiments": true,
+  "checkpoint_path": "models/demo_v3/experiments/A/best_model.keras",
+  "history_path": "results/demo_v3/experiments/A/training_history.json",
+  "probability_validation": {
+    "overall": {
+      "finite": true,
+      "row_count": 10000,
+      "maximum_sum_absolute_error": 4.76837158203125e-07
+    },
+    "in_vocabulary": {
+      "finite": true,
+      "row_count": 8566,
+      "maximum_sum_absolute_error": 4.76837158203125e-07
+    }
+  },
+  "inference_smoke_test": {
+    "input": "The history of",
+    "top_five": [
+      {
+        "word": "the",
+        "probability": 0.21358443796634674,
+        "rank": 1
+      },
+      {
+        "word": "a",
+        "probability": 0.06044962629675865,
+        "rank": 2
+      },
+      {
+        "word": "\"",
+        "probability": 0.010338736698031425,
+        "rank": 3
+      },
+      {
+        "word": "his",
+        "probability": 0.007186379283666611,
+        "rank": 4
+      },
+      {
+        "word": "an",
+        "probability": 0.0068244319409132,
+        "rank": 5
+      }
+    ],
+    "probabilities_finite": true,
+    "probability_sum": 0.9999999403953552
+  }
+}

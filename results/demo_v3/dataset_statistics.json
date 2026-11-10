@@ -1,0 +1,86 @@
+{
+  "selected_record_counts": {
+    "train": 578,
+    "validation": 105,
+    "test": 109
+  },
+  "sequence_counts": {
+    "train": 50000,
+    "validation": 10000,
+    "test": 10000
+  },
+  "vocabulary_size": 9593,
+  "split_statistics": {
+    "train": {
+      "sequence_count": 50000,
+      "oov_target_count": 0,
+      "oov_target_percentage": 0.0,
+      "oov_context_token_count": 0,
+      "non_padding_context_token_count": 406958,
+      "oov_context_token_percentage": 0.0
+    },
+    "validation": {
+      "sequence_count": 10000,
+      "oov_target_count": 1451,
+      "oov_target_percentage": 14.51,
+      "oov_context_token_count": 12197,
+      "non_padding_context_token_count": 82386,
+      "oov_context_token_percentage": 14.804699827640619
+    },
+    "test": {
+      "sequence_count": 10000,
+      "oov_target_count": 1434,
+      "oov_target_percentage": 14.34,
+      "oov_context_token_count": 11692,
+      "non_padding_context_token_count": 80749,
+      "oov_context_token_percentage": 14.479436277848642
+    }
+  },
+  "selection_statistics": {
+    "train": {
+      "selected_sequences": 50000,
+      "duplicates_within_split_excluded": 9,
+      "duplicates_from_other_splits_excluded": 0,
+      "records_without_sequences_skipped": 5
+    },
+    "validation": {
+      "selected_sequences": 10000,
+      "duplicates_within_split_excluded": 0,
+      "duplicates_from_other_splits_excluded": 2,
+      "records_without_sequences_skipped": 0
+    },
+    "test": {
+      "selected_sequences": 10000,
+      "duplicates_within_split_excluded": 0,
+      "duplicates_from_other_splits_excluded": 4,
+      "records_without_sequences_skipped": 1
+    }
+  },
+  "duplicate_checks": {
+    "duplicate_selected_records_within_or_across_splits": 0,
+    "excluded_duplicates_by_split": {
+      "train": {
+        "within_split": 9,
+        "from_prior_split": 0
+      },
+      "validation": {
+        "within_split": 0,
+        "from_prior_split": 2
+      },
+      "test": {
+        "within_split": 0,
+        "from_prior_split": 4
+      }
+    }
+  },
+  "split_separation_checks": {
+    "official_splits_kept_separate": true,
+    "selected_source_record_ids_overlap": false,
+    "selected_normalized_record_text_overlap": false
+  },
+  "sequence_boundary_checks": {
+    "sequences_cross_sentence_boundary": 0,
+    "sequences_cross_record_boundary": 0,
+    "all_sequences_within_source_sentence": true
+  }
+}

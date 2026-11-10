@@ -1,0 +1,31 @@
+{
+  "id": "C",
+  "name": "SimpleRNN",
+  "architecture": "rnn",
+  "mask_zero": true,
+  "seed": 42,
+  "max_epochs": 20,
+  "batch_size": 128,
+  "embedding_dim": 128,
+  "hidden_units": 64,
+  "dropout": 0.2,
+  "optimizer": "Adam",
+  "loss": "sparse_categorical_crossentropy",
+  "early_stopping": {
+    "monitor": "val_loss",
+    "patience": 2,
+    "restore_best_weights": true
+  },
+  "reduce_lr_on_plateau": {
+    "monitor": "val_loss",
+    "factor": 0.5,
+    "patience": 1,
+    "min_lr": 1e-06
+  },
+  "dataset_sha256": {
+    "train": "96996f14916b05474b7b8f2aaca63b1cf6034fb68d50c19ed1f1f52e013f0525",
+    "validation": "e3787368f1b965b97abf9d0efa87cb8a5b0b875e4f78e3574c1382c562d56624",
+    "test": "2bc8690ee754a4756e6d0f7631388c76324601611e0f1e06816d52fe637254f9"
+  },
+  "tokenizer_mapping_sha256": "f2b73d7ae243444d65804fcdc4b3ef7de507a3f81c44a5f674f5d1f209ab3790"
+}

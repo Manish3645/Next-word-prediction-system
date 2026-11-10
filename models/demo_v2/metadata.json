@@ -1,0 +1,66 @@
+{
+  "dataset": "Salesforce/wikitext/wikitext-2-raw-v1",
+  "artifact_set": "demo_v2",
+  "source_artifact_set": "wikitext2",
+  "selection_method": "seeded randomized record-level selection within each official split",
+  "selection_seeds": {
+    "train": 42,
+    "validation": 43,
+    "test": 44
+  },
+  "source_record_counts": {
+    "train": 23767,
+    "validation": 2461,
+    "test": 2891
+  },
+  "selected_record_counts": {
+    "train": 252,
+    "validation": 119,
+    "test": 122
+  },
+  "requested_sequence_limits": {
+    "train": 20000,
+    "validation": 10000,
+    "test": 10000
+  },
+  "actual_sequences": {
+    "train": 20000,
+    "validation": 10000,
+    "test": 10000
+  },
+  "oov_target_counts": {
+    "train": 54,
+    "validation": 2285,
+    "test": 2289
+  },
+  "oov_target_percentages": {
+    "train": 0.27,
+    "validation": 22.85,
+    "test": 22.89
+  },
+  "sequence_length": 10,
+  "tokenizer_fit_split": "demo_v2 training text only",
+  "tokenizer_num_words": null,
+  "tokenizer_word_index_size": 5898,
+  "max_token_id": 5898,
+  "effective_vocabulary_size": 5899,
+  "padding_id": 0,
+  "oov_token": "<OOV>",
+  "oov_id": 1,
+  "tokenizer_path": "models/demo_v2/tokenizer.pkl",
+  "processed_split_paths": {
+    "train": "data/demo_v2/processed_train.npz",
+    "validation": "data/demo_v2/processed_validation.npz",
+    "test": "data/demo_v2/processed_test.npz"
+  },
+  "raw_split_paths": {
+    "train": "data/demo_v2/train.txt",
+    "validation": "data/demo_v2/valid.txt",
+    "test": "data/demo_v2/test.txt"
+  },
+  "source_raw_split_paths": {
+    "train": "data/wikitext2/train.txt",
+    "validation": "data/wikitext2/valid.txt",
+    "test": "data/wikitext2/test.txt"
+  }
+}

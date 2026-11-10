@@ -1,0 +1,50 @@
+{
+  "preprocessing_version": "demo_v3_unicode_tokens_v1",
+  "dataset": "Salesforce/wikitext/wikitext-2-raw-v1",
+  "seed": 42,
+  "split_selection_seeds": {
+    "train": 42,
+    "validation": 43,
+    "test": 44
+  },
+  "sequence_length": 10,
+  "sequence_budgets": {
+    "train": 50000,
+    "validation": 10000,
+    "test": 10000
+  },
+  "unicode_normalization": "NFC",
+  "case_policy": "Unicode casefold",
+  "whitespace_policy": "collapse horizontal whitespace; preserve line boundaries",
+  "apostrophe_policy": "normalize curly apostrophes to ASCII apostrophe; retain internal apostrophes in contractions",
+  "quotation_policy": "normalize curly double quotes to ASCII double quote token",
+  "punctuation_policy": "retain punctuation and underscore symbols as individual vocabulary tokens",
+  "hyphen_policy": "split hyphenated words; retain hyphen as a token",
+  "wikitext_marker_policy": {
+    "@-@": "-",
+    "@,@": ",",
+    "@.@": "."
+  },
+  "sentence_boundary_policy": "sentence-final . ! ? and source line breaks; no sequence crosses a boundary",
+  "tokenizer": {
+    "class": "tensorflow.keras.preprocessing.text.Tokenizer",
+    "num_words": null,
+    "filters": "",
+    "lower": false,
+    "split": " ",
+    "padding_id": 0,
+    "oov_token": "<OOV>",
+    "oov_id": 1,
+    "effective_vocabulary_size": 9593,
+    "ordered_word_index_sha256": "f2b73d7ae243444d65804fcdc4b3ef7de507a3f81c44a5f674f5d1f209ab3790"
+  },
+  "model_configuration": {
+    "sequence_length": 10,
+    "vocabulary_size": 9593,
+    "embedding_dim": 128,
+    "hidden_units": 64,
+    "dropout": 0.2,
+    "mask_zero": true,
+    "output_classes": 9593
+  }
+}
